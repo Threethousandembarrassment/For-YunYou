@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.5" >
+
+        <ImageView
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/em_welcom_logo" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="vertical" >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#fff" >
+
+            <ImageView
+                android:id="@+id/iv_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dip"
+                android:src="@drawable/em_icon_account" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/birthday"
+                android:layout_centerVertical="true"
+                android:text="昵称"
+                android:textSize="18sp"
+                android:layout_toRightOf="@+id/iv_username"/>
+
+            <EditText
+                android:id="@+id/user_phone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/birthday"
+                android:background="@null"
+                android:text="毛线球先生"
+                android:paddingLeft="25dip"
+                android:singleLine="true"
+                android:textSize="18sp" />
+        </RelativeLayout>
+        <TextView
+            android:layout_below="@+id/alarm_time"
+            android:layout_width="match_parent"
+            android:layout_height="0.4dp"
+            android:background="@color/colorAccent"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#fff" >
+
+            <ImageView
+                android:id="@+id/iv_verification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dip"
+                android:src="@drawable/em_icon_account" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/nicheng"
+                android:layout_centerVertical="true"
+                android:text="生日"
+                android:textSize="18sp"
+                android:layout_toRightOf="@+id/iv_verification"/>
+
+            <EditText
+                android:id="@+id/verification"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/nicheng"
+                android:background="@null"
+                android:text="1988年5月20日"
+                android:paddingLeft="25dip"
+                android:singleLine="true"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+        <TextView
+            android:layout_below="@+id/alarm_time"
+            android:layout_width="match_parent"
+            android:layout_height="0.4dp"
+            android:background="@color/colorAccent"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#fff" >
+
+            <ImageView
+                android:id="@+id/iv_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dip"
+                android:src="@drawable/em_icon_account" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/xingbie"
+                android:layout_centerVertical="true"
+                android:text="性别"
+                android:textSize="18sp"
+                android:layout_toRightOf="@+id/iv_password"/>
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/xingbie"
+                android:background="@null"
+                android:text="男"
+                android:paddingLeft="25dip"
+                android:singleLine="true"
+                android:textSize="18sp" />
+        </RelativeLayout>
+        <TextView
+            android:layout_below="@+id/alarm_time"
+            android:layout_width="match_parent"
+            android:layout_height="0.4dp"
+            android:background="@color/colorAccent"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#fff" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/zhifubao"
+                android:layout_centerVertical="true"
+                android:text="支付宝账号"
+                android:textSize="18sp"/>
+
+            <EditText
+                android:id="@+id/confirmcode"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:layout_toRightOf="@+id/zhifubao"
+                android:text="14578975675"
+                android:paddingLeft="16dip"
+                android:singleLine="true"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+        <TextView
+            android:layout_below="@+id/alarm_time"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@color/colorAccent"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#fff" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/email"
+                android:layout_centerVertical="true"
+                android:text="邮箱账号"
+                android:textSize="18sp"/>
+
+            <EditText
+                android:id="@+id/inviter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/email"
+                android:background="@null"
+                android:text="34665234@163.com"
+                android:paddingLeft="33dip"
+                android:singleLine="true"
+                android:textSize="18sp" />
+        </RelativeLayout>
+        <TextView
+            android:layout_below="@+id/alarm_time"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@color/colorAccent"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.25"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="vertical" >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:background="@color/colorAccent"
+            android:gravity="center"
+            android:onClick="register"
+            android:paddingBottom="7dp"
+            android:paddingTop="7dp"
+            android:text="保存"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:id="@+id/button2" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
