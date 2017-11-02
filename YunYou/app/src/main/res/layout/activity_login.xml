@@ -122,6 +122,7 @@
 <TextView
     android:layout_width="match_parent"
     android:layout_height="40dp"
-    android:id="@+id/Result"/>
+    android:background="@color/colorAccent"
+    android:id="@+id/login_tv_result"/>
     </RelativeLayout>
 </LinearLayout>

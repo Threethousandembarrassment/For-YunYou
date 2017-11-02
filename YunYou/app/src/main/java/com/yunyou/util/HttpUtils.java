@@ -32,8 +32,8 @@ public class HttpUtils {
 
     }
 
-    public String bolwingJson(String username, String password) {
-        return "{'user_phone':" + username + "," + "'pwd':" + password + "}";
+    public String bolwingJson(String username,String zone, String password) {
+        return "{'user_phone':" + username + ","+"'zone':"+zone+ ","+"'pwd':" + password + "}";
         //   "{'username':" + username + ","+"'password':"+password+"}";
         }
 }
